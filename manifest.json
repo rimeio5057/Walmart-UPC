@@ -1,0 +1,26 @@
+{
+
+    "manifest_version": 2,
+    "name": "Walmart UPC - Hendrix",
+    "version": "1.0",
+  
+    "description": "Displays copy to clipboard UPC button for Walmart.com items",
+  
+    
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.walmart.com/*"],
+        "js": ["upc.js"]
+      }
+    ],
+
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "michael@hendrix-robotics.io"
+        }
+      }
+  
+  }
+
+ 
